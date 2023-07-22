@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My-Portfolio</title>
+
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/img/android-chrome-192x192.png" type="image/png">
+
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/603b1b2fbe.js" crossorigin="anonymous"></script>
+
+    <!-- animation on scroll cdn link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!----------------------- header section-------------------- -->
+    <div id="header" data-aos="fade-up" data-aos-duration="2500">
+        <div class="container">
+            <nav>
+                <h1>R<span>OHIT</span></h1>
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#header">home</a>
+                    </li>
+                    <li>
+                        <a href="#about">about</a>
+                    </li>
+                    <li>
+                        <a href="#services">services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">contact</a>
+                    </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>web developer</p>
+                <h1 class="ptext">hi I'm <span>Rohit lathiyan</span> from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-------------- about section --------------------------->
+    <div id="about" data-aos="fade-right" data-aos-duration="2000">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/img/about1(1).jpg" alt="rohit">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">about me</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus officia a, adipisci fugiat
+                        corrupti nisi atque voluptatibus iusto, harum soluta laudantium similique? Voluptate quidem
+                        placeat sequi reiciendis perspiciatis esse vel, sint et consequuntur dolore earum veniam.
+                        Deserunt ipsam sunt autem odit neque ea possimus, odio itaque pariatur consequuntur incidunt
+                        voluptatibus aliquid, laudantium esse, molestias voluptate unde quo soluta inventore.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab(`skills`)">skills</p>
+                        <p class="tab-links" onclick="opentab(`experience`)">experience</p>
+                        <p class="tab-links" onclick="opentab(`education`)">education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>designing web/app interfaces</li>
+                            <li><span>web developer</span><br>web app development</li>
+                            <li><span>app developer</span><br>building android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-2022</span><br>DET safdarjung airport AAI</li>
+                            <li><span>2019-2020</span><br>Internship At PWD department</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>diploma from Pusa Institute of Technology</li>
+                            <li><span>2017</span><br>Intermediate from CBSE</li>
+                            <li><span>2015</span><br>high school from CBSE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------sevices--------------------- -->
+    <div id="services" data-aos="flip-left" data-aos-duration="2000">
+        <div class="container">
+            <h1 class="sub-title">my services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime provident nam saepe voluptas
+                        minima cupiditate corporis incidunt nemo non inventore?</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>ui/ux design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime provident nam saepe voluptas
+                        minima cupiditate corporis incidunt nemo non inventore?</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>app design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime provident nam saepe voluptas
+                        minima cupiditate corporis incidunt nemo non inventore?</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------portfolio---------------- -->
+    <div id="portfolio" data-aos="flip-right" data-aos-duration="2000">
+        <div class="container">
+            <h1 class="sub-title">my work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/img/work-1.png" alt="work">
+                    <div class="layer">
+                        <h3>social media app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, placeat.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/img/work-2.png" alt="work">
+                    <div class="layer">
+                        <h3>weather app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, placeat.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/img/work-3.png" alt="work">
+                    <div class="layer">
+                        <h3>online shopping website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, placeat.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+
+    <!-- ------------------contact us----------------- -->
+    <div id="contact" data-aos="fade-up" data-aos-duration="2500">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">contact me</h1>
+                    <p><i class="fas fa-paper-plane"></i> rohitlathiyan@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91-8285508258</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; rohit lathiyan <i class="fas fa-heart"></i> made for practice </p>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------------animation on scoll-------------------------------------------------->
+    <script src="/main.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
